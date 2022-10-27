@@ -1,0 +1,22 @@
+/*
+ * Confederacion.h
+ *
+ *  Created on: 19 oct. 2022
+ *      Author: Facu
+ */
+
+#ifndef CONFEDERACION_H_
+#define CONFEDERACION_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+typedef struct{
+	int id;
+	char nombre[50];
+	char region[50];
+	int anioCreacion;
+	short isEmpty;
+};
+#endif /* CONFEDERACION_H_ */

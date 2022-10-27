@@ -1,0 +1,37 @@
+/*
+ ============================================================================
+ Name        : TP_[2].c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+#include "Jugador.h"
+#include "Confederacion.h"
+#define MAX_CONFEDERACION 6
+#define MAX_JUGADORES 3000
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+														   {2, "UEFA", "EUROPA",1954},
+														   {3, "AFC", "ASIA",1954},
+														   {4, "CAF", "AFRICA",1957},
+														   {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+														   {6, "OFC", "OCEANIA",1966}};
+
+	Jugador listJugadores[MAX_JUGADORES];
+
+	int opcion, opcionListar, opcionInforme;
+	int contadorLibro = 0;
+	int auxiliarIndice;
+	int flagCase1 = 0;
+
+
+}

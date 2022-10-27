@@ -1,0 +1,861 @@
+14:19:54 **** Rebuild of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+gcc -o TP_[2].exe "src\\TP_[2].o" 
+Info: Nothing to build for TP_[2]
+18:05:07 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_imprimirUno':
+..\src\Jugador.c:34:56: error: 'Jugador' {aka 'struct <anonymous>'} has no member named 'fechaPublicacion'
+   34 |  printf("Fecha de publicacion: %d/%d/%d\n",arrayJugador.fechaPublicacion.dia, arrayJugador.fechaPublicacion.mes, arrayJugador.fechaPublicacion.anio);
+      |                                                        ^
+..\src\Jugador.c:34:91: error: 'Jugador' {aka 'struct <anonymous>'} has no member named 'fechaPublicacion'
+   34 |  printf("Fecha de publicacion: %d/%d/%d\n",arrayJugador.fechaPublicacion.dia, arrayJugador.fechaPublicacion.mes, arrayJugador.fechaPublicacion.anio);
+      |                                                                                           ^
+..\src\Jugador.c:34:126: error: 'Jugador' {aka 'struct <anonymous>'} has no member named 'fechaPublicacion'
+   34 |  printf("Fecha de publicacion: %d/%d/%d\n",arrayJugador.fechaPublicacion.dia, arrayJugador.fechaPublicacion.mes, arrayJugador.fechaPublicacion.anio);
+      |                                                                                                                              ^
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:153:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  153 |    bufferJugador.titulo[0] = toupper(bufferJugador.titulo[0]);
+      |                              ^~~~~~~
+..\src\Jugador.c:164:17: error: 'sizeEntities' undeclared (first use in this function)
+  164 |    for(i = 0; i<sizeEntities; i++){
+      |                 ^~~~~~~~~~~~
+..\src\Jugador.c:164:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Jugador.c:165:35: error: 'arrayAutores' undeclared (first use in this function)
+  165 |     printf("\nID: %d\nNombre:%s", arrayAutores[i].id, arrayAutores[i].nombre);
+      |                                   ^~~~~~~~~~~~
+..\src\Jugador.c:170:41: error: 'arrayEditoriales' undeclared (first use in this function)
+  170 |      printf("\nID: %d\nDescripcion:%s", arrayEditoriales[i].id, arrayEditoriales[i].descripcion);
+      |                                         ^~~~~~~~~~~~~~~~
+..\src\Jugador.c:174:36: error: 'Jugador' {aka 'struct <anonymous>'} has no member named 'fechaPublicacion'
+  174 |        utn_getNumero(&bufferJugador.fechaPublicacion.dia, "\nIngrese fecha de publicacion(Numerica)\nDia: ", "\nError! Ingrese un numero: ", 1, 31, 2) == 0 &&
+      |                                    ^
+..\src\Jugador.c:175:36: error: 'Jugador' {aka 'struct <anonymous>'} has no member named 'fechaPublicacion'
+  175 |        utn_getNumero(&bufferJugador.fechaPublicacion.mes, "\nMes: ", "\nError! Ingrese un numero: ", 1, 12, 2) == 0 &&
+      |                                    ^
+..\src\Jugador.c:176:36: error: 'Jugador' {aka 'struct <anonymous>'} has no member named 'fechaPublicacion'
+  176 |        utn_getNumero(&bufferJugador.fechaPublicacion.anio, "Anio: ", "\nError! Ingrese un numero: ", 1800, 2022, 2) == 0 ){
+      |                                    ^
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:239:6: warning: unused variable 'idAux' [-Wunused-variable]
+  239 |  int idAux;
+      |      ^~~~~
+20:38:58 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+In file included from ..\src\TP_[2].c:14:
+..\src\Jugador.h:24:7: error: duplicate member 'posicion'
+   24 |  char posicion[MAX_CHARS];
+      |       ^~~~~~~~
+In file included from ..\src\TP_[2].c:15:
+..\src\Confederacion.h:18:1: warning: unnamed struct/union that defines no instances
+   18 | };
+      | ^
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:22:2: error: unknown type name 'Confederacion'
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |  ^~~~~~~~~~~~~
+..\src\TP_[2].c:22:2: warning: braces around scalar initializer
+..\src\TP_[2].c:22:2: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:61: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                             ^~~~~~~~~~
+..\src\TP_[2].c:22:61: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:73: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                         ^~~~~~~~~~~~
+..\src\TP_[2].c:22:73: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:86: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                                      ^~~~
+..\src\TP_[2].c:22:86: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:23:18: warning: braces around scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                  ^
+..\src\TP_[2].c:23:18: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:22: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                      ^~~~~~
+..\src\TP_[2].c:23:22: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:30: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                              ^~~~~~~~
+..\src\TP_[2].c:23:30: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:39: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                                       ^~~~
+..\src\TP_[2].c:23:39: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:24:18: warning: braces around scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                  ^
+..\src\TP_[2].c:24:18: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:22: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                      ^~~~~
+..\src\TP_[2].c:24:22: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:29: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                             ^~~~~~
+..\src\TP_[2].c:24:29: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:36: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                                    ^~~~
+..\src\TP_[2].c:24:36: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:25:18: warning: braces around scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                  ^
+..\src\TP_[2].c:25:18: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:22: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                      ^~~~~
+..\src\TP_[2].c:25:22: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:29: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                             ^~~~~~~~
+..\src\TP_[2].c:25:29: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:38: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                                      ^~~~
+..\src\TP_[2].c:25:38: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:26:18: warning: braces around scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                  ^
+..\src\TP_[2].c:26:18: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:22: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                      ^~~~~~~~~~
+..\src\TP_[2].c:26:22: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:34: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:26:34: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:59: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                                           ^~~~
+..\src\TP_[2].c:26:59: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:27:18: warning: braces around scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                  ^
+..\src\TP_[2].c:27:18: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:22: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                      ^~~~~
+..\src\TP_[2].c:27:22: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:29: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                             ^~~~~~~~~
+..\src\TP_[2].c:27:29: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:39: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                                       ^~~~
+..\src\TP_[2].c:27:39: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:47:13: warning: implicit declaration of function 'Libro_addLibro' [-Wimplicit-function-declaration]
+   47 |          if(Libro_addLibro(listJugadores, MAX_JUGADORES)==0){
+      |             ^~~~~~~~~~~~~~
+..\src\TP_[2].c:65:12: warning: implicit declaration of function 'Libro_modificar'; did you mean 'Jugador_modificar'? [-Wimplicit-function-declaration]
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |            ^~~~~~~~~~~~~~~
+      |            Jugador_modificar
+..\src\TP_[2].c:65:58: error: 'editoriales' undeclared (first use in this function)
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |                                                          ^~~~~~~~~~~
+..\src\TP_[2].c:65:58: note: each undeclared identifier is reported only once for each function it appears in
+..\src\TP_[2].c:65:71: error: 'autores' undeclared (first use in this function)
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |                                                                       ^~~~~~~
+..\src\TP_[2].c:65:80: error: 'MAX_ENTITIES' undeclared (first use in this function)
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |                                                                                ^~~~~~~~~~~~
+..\src\TP_[2].c:67:10: warning: implicit declaration of function 'Libro_imprimirTodos'; did you mean 'Jugador_imprimirTodos'? [-Wimplicit-function-declaration]
+   67 |          Libro_imprimirTodos(listJugadores, MAX_JUGADORES);
+      |          ^~~~~~~~~~~~~~~~~~~
+      |          Jugador_imprimirTodos
+..\src\TP_[2].c:70:17: warning: unknown escape sequence: '\M'
+   70 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:82:13: warning: implicit declaration of function 'Libro_bajaLibro' [-Wimplicit-function-declaration]
+   82 |          if(Libro_bajaLibro(listJugadores, MAX_JUGADORES) == 0){
+      |             ^~~~~~~~~~~~~~~
+..\src\TP_[2].c:105:14: warning: implicit declaration of function 'Libro_informarPuntoA'; did you mean 'Jugador_informarPuntoA'? [-Wimplicit-function-declaration]
+  105 |           if(Libro_informarPuntoA(listJugadores, MAX_JUGADORES) == 0){
+      |              ^~~~~~~~~~~~~~~~~~~~
+      |              Jugador_informarPuntoA
+..\src\TP_[2].c:110:14: warning: implicit declaration of function 'Libro_informarPuntoB'; did you mean 'Jugador_informarPuntoB'? [-Wimplicit-function-declaration]
+  110 |           if(Libro_informarPuntoB(listJugadores, MAX_JUGADORES) == 0){
+      |              ^~~~~~~~~~~~~~~~~~~~
+      |              Jugador_informarPuntoB
+..\src\TP_[2].c:135:15: warning: implicit declaration of function 'Editorial_imprimirEditoriales' [-Wimplicit-function-declaration]
+  135 |            if(Editorial_imprimirEditoriales(editoriales, MAX_ENTITIES) == 0){
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:147:14: warning: implicit declaration of function 'Libro_listarlistJugadoresCompletos'; did you mean 'Jugador_listarJugadorsCompletos'? [-Wimplicit-function-declaration]
+  147 |           if(Libro_listarlistJugadoresCompletos(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              Jugador_listarJugadorsCompletos
+..\src\TP_[2].c:22:16: warning: unused variable 'listConfederacion' [-Wunused-variable]
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                ^~~~~~~~~~~~~~~~~
+20:40:20 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Confederacion.o" "..\\src\\Confederacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_imprimirUno':
+..\src\Jugador.c:39:24: warning: format '%f' expects argument of type 'double', but argument 2 has type 'char *' [-Wformat=]
+   39 |  printf("Posicion: $%.2f\n",arrayJugador.posicion);
+      |                     ~~~^    ~~~~~~~~~~~~~~~~~~~~~
+      |                        |                |
+      |                        double           char *
+      |                     %.2s
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:163:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  163 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+..\src\Jugador.c:154:8: warning: unused variable 'salario' [-Wunused-variable]
+  154 |  float salario;
+      |        ^~~~~~~
+..\src\Jugador.c:153:6: warning: unused variable 'numeroCamiseta' [-Wunused-variable]
+  153 |  int numeroCamiseta;
+      |      ^~~~~~~~~~~~~~
+..\src\Jugador.c:152:6: warning: unused variable 'idAutor' [-Wunused-variable]
+  152 |  int idAutor;
+      |      ^~~~~~~
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:243:6: warning: unused variable 'idAux' [-Wunused-variable]
+  243 |  int idAux;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+In file included from ..\src\TP_[2].c:15:
+..\src\Confederacion.h:18:1: warning: unnamed struct/union that defines no instances
+   18 | };
+      | ^
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:22:2: error: unknown type name 'Confederacion'
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |  ^~~~~~~~~~~~~
+..\src\TP_[2].c:22:2: warning: braces around scalar initializer
+..\src\TP_[2].c:22:2: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:61: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                             ^~~~~~~~~~
+..\src\TP_[2].c:22:61: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:73: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                         ^~~~~~~~~~~~
+..\src\TP_[2].c:22:73: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:86: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                                      ^~~~
+..\src\TP_[2].c:22:86: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:23:18: warning: braces around scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                  ^
+..\src\TP_[2].c:23:18: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:22: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                      ^~~~~~
+..\src\TP_[2].c:23:22: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:30: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                              ^~~~~~~~
+..\src\TP_[2].c:23:30: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:39: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                                       ^~~~
+..\src\TP_[2].c:23:39: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:24:18: warning: braces around scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                  ^
+..\src\TP_[2].c:24:18: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:22: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                      ^~~~~
+..\src\TP_[2].c:24:22: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:29: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                             ^~~~~~
+..\src\TP_[2].c:24:29: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:36: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                                    ^~~~
+..\src\TP_[2].c:24:36: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:25:18: warning: braces around scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                  ^
+..\src\TP_[2].c:25:18: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:22: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                      ^~~~~
+..\src\TP_[2].c:25:22: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:29: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                             ^~~~~~~~
+..\src\TP_[2].c:25:29: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:38: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                                      ^~~~
+..\src\TP_[2].c:25:38: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:26:18: warning: braces around scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                  ^
+..\src\TP_[2].c:26:18: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:22: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                      ^~~~~~~~~~
+..\src\TP_[2].c:26:22: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:34: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:26:34: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:59: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                                           ^~~~
+..\src\TP_[2].c:26:59: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:27:18: warning: braces around scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                  ^
+..\src\TP_[2].c:27:18: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:22: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                      ^~~~~
+..\src\TP_[2].c:27:22: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:29: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                             ^~~~~~~~~
+..\src\TP_[2].c:27:29: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:39: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                                       ^~~~
+..\src\TP_[2].c:27:39: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:47:13: warning: implicit declaration of function 'Libro_addLibro' [-Wimplicit-function-declaration]
+   47 |          if(Libro_addLibro(listJugadores, MAX_JUGADORES)==0){
+      |             ^~~~~~~~~~~~~~
+..\src\TP_[2].c:65:12: warning: implicit declaration of function 'Libro_modificar'; did you mean 'Jugador_modificar'? [-Wimplicit-function-declaration]
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |            ^~~~~~~~~~~~~~~
+      |            Jugador_modificar
+..\src\TP_[2].c:65:58: error: 'editoriales' undeclared (first use in this function)
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |                                                          ^~~~~~~~~~~
+..\src\TP_[2].c:65:58: note: each undeclared identifier is reported only once for each function it appears in
+..\src\TP_[2].c:65:71: error: 'autores' undeclared (first use in this function)
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |                                                                       ^~~~~~~
+..\src\TP_[2].c:65:80: error: 'MAX_ENTITIES' undeclared (first use in this function)
+   65 |         if(Libro_modificar(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |                                                                                ^~~~~~~~~~~~
+..\src\TP_[2].c:67:10: warning: implicit declaration of function 'Libro_imprimirTodos'; did you mean 'Jugador_imprimirTodos'? [-Wimplicit-function-declaration]
+   67 |          Libro_imprimirTodos(listJugadores, MAX_JUGADORES);
+      |          ^~~~~~~~~~~~~~~~~~~
+      |          Jugador_imprimirTodos
+..\src\TP_[2].c:70:17: warning: unknown escape sequence: '\M'
+   70 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:82:13: warning: implicit declaration of function 'Libro_bajaLibro' [-Wimplicit-function-declaration]
+   82 |          if(Libro_bajaLibro(listJugadores, MAX_JUGADORES) == 0){
+      |             ^~~~~~~~~~~~~~~
+..\src\TP_[2].c:105:14: warning: implicit declaration of function 'Libro_informarPuntoA'; did you mean 'Jugador_informarPuntoA'? [-Wimplicit-function-declaration]
+  105 |           if(Libro_informarPuntoA(listJugadores, MAX_JUGADORES) == 0){
+      |              ^~~~~~~~~~~~~~~~~~~~
+      |              Jugador_informarPuntoA
+..\src\TP_[2].c:110:14: warning: implicit declaration of function 'Libro_informarPuntoB'; did you mean 'Jugador_informarPuntoB'? [-Wimplicit-function-declaration]
+  110 |           if(Libro_informarPuntoB(listJugadores, MAX_JUGADORES) == 0){
+      |              ^~~~~~~~~~~~~~~~~~~~
+      |              Jugador_informarPuntoB
+..\src\TP_[2].c:135:15: warning: implicit declaration of function 'Editorial_imprimirEditoriales' [-Wimplicit-function-declaration]
+  135 |            if(Editorial_imprimirEditoriales(editoriales, MAX_ENTITIES) == 0){
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:147:14: warning: implicit declaration of function 'Libro_listarlistJugadoresCompletos'; did you mean 'Jugador_listarJugadorsCompletos'? [-Wimplicit-function-declaration]
+  147 |           if(Libro_listarlistJugadoresCompletos(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              Jugador_listarJugadorsCompletos
+..\src\TP_[2].c:22:16: warning: unused variable 'listConfederacion' [-Wunused-variable]
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                ^~~~~~~~~~~~~~~~~
+20:42:08 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+In file included from ..\src\TP_[2].c:15:
+..\src\Confederacion.h:18:1: warning: unnamed struct/union that defines no instances
+   18 | };
+      | ^
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:22:2: error: unknown type name 'Confederacion'
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |  ^~~~~~~~~~~~~
+..\src\TP_[2].c:22:2: warning: braces around scalar initializer
+..\src\TP_[2].c:22:2: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:61: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                             ^~~~~~~~~~
+..\src\TP_[2].c:22:61: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:73: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                         ^~~~~~~~~~~~
+..\src\TP_[2].c:22:73: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:86: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                                      ^~~~
+..\src\TP_[2].c:22:86: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:23:18: warning: braces around scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                  ^
+..\src\TP_[2].c:23:18: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:22: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                      ^~~~~~
+..\src\TP_[2].c:23:22: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:30: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                              ^~~~~~~~
+..\src\TP_[2].c:23:30: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:39: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                                       ^~~~
+..\src\TP_[2].c:23:39: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:24:18: warning: braces around scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                  ^
+..\src\TP_[2].c:24:18: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:22: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                      ^~~~~
+..\src\TP_[2].c:24:22: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:29: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                             ^~~~~~
+..\src\TP_[2].c:24:29: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:36: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                                    ^~~~
+..\src\TP_[2].c:24:36: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:25:18: warning: braces around scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                  ^
+..\src\TP_[2].c:25:18: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:22: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                      ^~~~~
+..\src\TP_[2].c:25:22: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:29: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                             ^~~~~~~~
+..\src\TP_[2].c:25:29: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:38: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                                      ^~~~
+..\src\TP_[2].c:25:38: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:26:18: warning: braces around scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                  ^
+..\src\TP_[2].c:26:18: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:22: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                      ^~~~~~~~~~
+..\src\TP_[2].c:26:22: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:34: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:26:34: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:59: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                                           ^~~~
+..\src\TP_[2].c:26:59: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:27:18: warning: braces around scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                  ^
+..\src\TP_[2].c:27:18: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:22: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                      ^~~~~
+..\src\TP_[2].c:27:22: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:29: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                             ^~~~~~~~~
+..\src\TP_[2].c:27:29: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:39: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                                       ^~~~
+..\src\TP_[2].c:27:39: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:47:13: error: too few arguments to function 'Jugador_addJugador'
+   47 |          if(Jugador_addJugador(listJugadores, MAX_JUGADORES)==0){
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_[2].c:14:
+..\src\Jugador.h:38:5: note: declared here
+   38 | int Jugador_addJugador(Jugador *arrayJugador,int size,int indice);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:70:17: warning: unknown escape sequence: '\M'
+   70 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:135:15: warning: implicit declaration of function 'Editorial_imprimirEditoriales' [-Wimplicit-function-declaration]
+  135 |            if(Editorial_imprimirEditoriales(editoriales, MAX_ENTITIES) == 0){
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:135:45: error: 'editoriales' undeclared (first use in this function)
+  135 |            if(Editorial_imprimirEditoriales(editoriales, MAX_ENTITIES) == 0){
+      |                                             ^~~~~~~~~~~
+..\src\TP_[2].c:135:45: note: each undeclared identifier is reported only once for each function it appears in
+..\src\TP_[2].c:135:58: error: 'MAX_ENTITIES' undeclared (first use in this function)
+  135 |            if(Editorial_imprimirEditoriales(editoriales, MAX_ENTITIES) == 0){
+      |                                                          ^~~~~~~~~~~~
+..\src\TP_[2].c:147:14: warning: implicit declaration of function 'Jugador_listarlistJugadoresCompletos'; did you mean 'Jugador_listarJugadorsCompletos'? [-Wimplicit-function-declaration]
+  147 |           if(Jugador_listarlistJugadoresCompletos(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |              Jugador_listarJugadorsCompletos
+..\src\TP_[2].c:147:94: error: 'autores' undeclared (first use in this function)
+  147 |           if(Jugador_listarlistJugadoresCompletos(listJugadores, MAX_JUGADORES, editoriales, autores, MAX_ENTITIES) == 0){
+      |                                                                                              ^~~~~~~
+..\src\TP_[2].c:22:16: warning: unused variable 'listConfederacion' [-Wunused-variable]
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                ^~~~~~~~~~~~~~~~~
+20:43:48 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+In file included from ..\src\TP_[2].c:15:
+..\src\Confederacion.h:18:1: warning: unnamed struct/union that defines no instances
+   18 | };
+      | ^
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:22:2: error: unknown type name 'Confederacion'
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |  ^~~~~~~~~~~~~
+..\src\TP_[2].c:22:2: warning: braces around scalar initializer
+..\src\TP_[2].c:22:2: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:61: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                             ^~~~~~~~~~
+..\src\TP_[2].c:22:61: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:73: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                         ^~~~~~~~~~~~
+..\src\TP_[2].c:22:73: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:22:86: warning: excess elements in scalar initializer
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                                                                                      ^~~~
+..\src\TP_[2].c:22:86: note: (near initialization for 'listConfederacion[0]')
+..\src\TP_[2].c:23:18: warning: braces around scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                  ^
+..\src\TP_[2].c:23:18: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:22: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                      ^~~~~~
+..\src\TP_[2].c:23:22: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:30: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                              ^~~~~~~~
+..\src\TP_[2].c:23:30: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:23:39: warning: excess elements in scalar initializer
+   23 |                  {2, "UEFA", "EUROPA",1954},
+      |                                       ^~~~
+..\src\TP_[2].c:23:39: note: (near initialization for 'listConfederacion[1]')
+..\src\TP_[2].c:24:18: warning: braces around scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                  ^
+..\src\TP_[2].c:24:18: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:22: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                      ^~~~~
+..\src\TP_[2].c:24:22: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:29: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                             ^~~~~~
+..\src\TP_[2].c:24:29: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:24:36: warning: excess elements in scalar initializer
+   24 |                  {3, "AFC", "ASIA",1954},
+      |                                    ^~~~
+..\src\TP_[2].c:24:36: note: (near initialization for 'listConfederacion[2]')
+..\src\TP_[2].c:25:18: warning: braces around scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                  ^
+..\src\TP_[2].c:25:18: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:22: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                      ^~~~~
+..\src\TP_[2].c:25:22: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:29: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                             ^~~~~~~~
+..\src\TP_[2].c:25:29: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:25:38: warning: excess elements in scalar initializer
+   25 |                  {4, "CAF", "AFRICA",1957},
+      |                                      ^~~~
+..\src\TP_[2].c:25:38: note: (near initialization for 'listConfederacion[3]')
+..\src\TP_[2].c:26:18: warning: braces around scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                  ^
+..\src\TP_[2].c:26:18: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:22: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                      ^~~~~~~~~~
+..\src\TP_[2].c:26:22: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:34: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:26:34: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:26:59: warning: excess elements in scalar initializer
+   26 |                  {5, "CONCACAF", "NORTE Y CENTRO AMERICA",1961},
+      |                                                           ^~~~
+..\src\TP_[2].c:26:59: note: (near initialization for 'listConfederacion[4]')
+..\src\TP_[2].c:27:18: warning: braces around scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                  ^
+..\src\TP_[2].c:27:18: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:22: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                      ^~~~~
+..\src\TP_[2].c:27:22: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:29: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                             ^~~~~~~~~
+..\src\TP_[2].c:27:29: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:27:39: warning: excess elements in scalar initializer
+   27 |                  {6, "OFC", "OCEANIA",1966}};
+      |                                       ^~~~
+..\src\TP_[2].c:27:39: note: (near initialization for 'listConfederacion[5]')
+..\src\TP_[2].c:70:17: warning: unknown escape sequence: '\M'
+   70 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:22:16: warning: unused variable 'listConfederacion' [-Wunused-variable]
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                ^~~~~~~~~~~~~~~~~
+20:46:37 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:71:17: warning: unknown escape sequence: '\M'
+   71 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:22:16: warning: unused variable 'listConfederacion' [-Wunused-variable]
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                ^~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:163:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  163 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+..\src\Jugador.c:154:8: warning: unused variable 'salario' [-Wunused-variable]
+  154 |  float salario;
+      |        ^~~~~~~
+..\src\Jugador.c:153:6: warning: unused variable 'numeroCamiseta' [-Wunused-variable]
+  153 |  int numeroCamiseta;
+      |      ^~~~~~~~~~~~~~
+..\src\Jugador.c:152:6: warning: unused variable 'idAutor' [-Wunused-variable]
+  152 |  int idAutor;
+      |      ^~~~~~~
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:243:6: warning: unused variable 'idAux' [-Wunused-variable]
+  243 |  int idAux;
+      |      ^~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\TP_[2].o: in function `main':
+C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/TP_[2].c:106: undefined reference to `Jugador_informarPuntoA'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/TP_[2].c:111: undefined reference to `Jugador_informarPuntoB'
+collect2.exe: error: ld returned 1 exit status
+20:46:46 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\TP_[2].o: in function `main':
+C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/TP_[2].c:106: undefined reference to `Jugador_informarPuntoA'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/TP_[2].c:111: undefined reference to `Jugador_informarPuntoB'
+collect2.exe: error: ld returned 1 exit status
+20:47:16 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:71:17: warning: unknown escape sequence: '\M'
+   71 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:32:28: warning: unused variable 'opcionInforme' [-Wunused-variable]
+   32 |  int opcion, opcionListar, opcionInforme;
+      |                            ^~~~~~~~~~~~~
+..\src\TP_[2].c:22:16: warning: unused variable 'listConfederacion' [-Wunused-variable]
+   22 |  Confederacion listConfederacion [MAX_CONFEDERACION] = {{1, "CONMEBOL", "SUDAMERCIA",1916},
+      |                ^~~~~~~~~~~~~~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+Info: Nothing to build for TP_[2]
+21:23:32 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:163:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  163 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+..\src\Jugador.c:154:8: warning: unused variable 'salario' [-Wunused-variable]
+  154 |  float salario;
+      |        ^~~~~~~
+..\src\Jugador.c:153:6: warning: unused variable 'numeroCamiseta' [-Wunused-variable]
+  153 |  int numeroCamiseta;
+      |      ^~~~~~~~~~~~~~
+..\src\Jugador.c:152:6: warning: unused variable 'idAutor' [-Wunused-variable]
+  152 |  int idAutor;
+      |      ^~~~~~~
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:243:6: warning: unused variable 'idAux' [-Wunused-variable]
+  243 |  int idAux;
+      |      ^~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+22:01:47 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+In file included from ..\src\Jugador.c:9:
+..\src\Jugador.h:38:67: error: unknown type name 'Confederacion'
+   38 | int Jugador_addJugador(Jugador *arrayJugador,int size,int indice, Confederacion *arrayConfederacion, int limitConfederacion);
+      |                                                                   ^~~~~~~~~~~~~
+..\src\Jugador.c:150:68: error: unknown type name 'Confederacion'
+  150 | int Jugador_addJugador(Jugador *arrayJugador,int size,int indice , Confederacion *arrayConfederacion, int limitConfederacion){
+      |                                                                    ^~~~~~~~~~~~~
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:247:6: warning: unused variable 'idAux' [-Wunused-variable]
+  247 |  int idAux;
+      |      ^~~~~
+22:02:17 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:160:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  160 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:247:6: warning: unused variable 'idAux' [-Wunused-variable]
+  247 |  int idAux;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:46:26: error: too many arguments to function 'Jugador_buscarLugarLibre'
+   46 |         auxiliarIndice = Jugador_buscarLugarLibre(listJugadores, MAX_JUGADORES, listConfederacion, MAX_CONFEDERACION);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_[2].c:14:
+..\src\Jugador.h:38:5: note: declared here
+   38 | int Jugador_buscarLugarLibre(Jugador *arrayJugador,int size);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:48:13: error: too few arguments to function 'Jugador_addJugador'
+   48 |          if(Jugador_addJugador(listJugadores, MAX_JUGADORES, auxiliarIndice)==0){
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\TP_[2].c:14:
+..\src\Jugador.h:39:5: note: declared here
+   39 | int Jugador_addJugador(Jugador *arrayJugador,int size,int indice, Confederacion *arrayConfederacion, int limitConfederacion);
+      |     ^~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:71:17: warning: unknown escape sequence: '\M'
+   71 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:32:28: warning: unused variable 'opcionInforme' [-Wunused-variable]
+   32 |  int opcion, opcionListar, opcionInforme;
+      |                            ^~~~~~~~~~~~~
+12:17:08 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:160:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  160 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+..\src\Jugador.c:178:18: error: 'limitConfederacion' undeclared (first use in this function); did you mean 'idConfederacion'?
+  178 |     for(i = 0; i<limitConfederacion; i++){
+      |                  ^~~~~~~~~~~~~~~~~~
+      |                  idConfederacion
+..\src\Jugador.c:178:18: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Jugador.c:179:36: error: 'arrayConfederacion' undeclared (first use in this function); did you mean 'idConfederacion'?
+  179 |      printf("\nID: %d\nNombre:%s", arrayConfederacion[i].id, arrayConfederacion[i].nombre);
+      |                                    ^~~~~~~~~~~~~~~~~~
+      |                                    idConfederacion
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:247:6: warning: unused variable 'idAux' [-Wunused-variable]
+  247 |  int idAux;
+      |      ^~~~~
+12:18:32 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:71:17: warning: unknown escape sequence: '\M'
+   71 |          printf("\Modificacion cancelada.\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\TP_[2].c:32:28: warning: unused variable 'opcionInforme' [-Wunused-variable]
+   32 |  int opcion, opcionListar, opcionInforme;
+      |                            ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:160:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  160 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+..\src\Jugador.c: In function 'Jugador_modificar':
+..\src\Jugador.c:247:6: warning: unused variable 'idAux' [-Wunused-variable]
+  247 |  int idAux;
+      |      ^~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+Info: Nothing to build for TP_[2]
+Info: Nothing to build for TP_[2]
+Info: Nothing to build for TP_[2]
+Info: Nothing to build for TP_[2]
+12:47:33 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Confederacion.o" "..\\src\\Confederacion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_[2].o" "..\\src\\TP_[2].c" 
+..\src\TP_[2].c: In function 'main':
+..\src\TP_[2].c:32:28: warning: unused variable 'opcionInforme' [-Wunused-variable]
+   32 |  int opcion, opcionListar, opcionInforme;
+      |                            ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:160:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  160 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_[2].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:47:38 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Jugador.o:Jugador.c:(.data+0x0): multiple definition of `idAutomatico'; src\Confederacion.o:Confederacion.c:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+12:48:31 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Jugador.o:Jugador.c:(.data+0x0): multiple definition of `idAutomatico'; src\Confederacion.o:Confederacion.c:(.data+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+12:49:30 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Confederacion.o" "..\\src\\Confederacion.c" 
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+Info: Nothing to build for TP_[2]
+12:53:20 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:161:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  161 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_[2].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:53:27 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+Info: Nothing to build for TP_[2]
+12:54:48 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:161:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  161 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_[2].exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:54:53 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Jugador.o: in function `Confederacion_imprimirUno':
+C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/Confederacion.c:17: multiple definition of `Confederacion_imprimirUno'; src\Confederacion.o:C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/Confederacion.c:17: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Jugador.o: in function `Confederacion_imprimirConfederaciones':
+C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/Confederacion.c:25: multiple definition of `Confederacion_imprimirConfederaciones'; src\Confederacion.o:C:\Users\Facu\eclipse-workspace\tp_laboratorio_2\TP_[2]\TP_[2]\Debug/../src/Confederacion.c:25: first defined here
+collect2.exe: error: ld returned 1 exit status
+12:55:20 **** Incremental Build of configuration Debug for project TP_[2] ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugador.o" "..\\src\\Jugador.c" 
+..\src\Jugador.c: In function 'Jugador_addJugador':
+..\src\Jugador.c:161:30: warning: implicit declaration of function 'toupper' [-Wimplicit-function-declaration]
+  161 |    bufferJugador.nombre[0] = toupper(bufferJugador.nombre[0]);
+      |                              ^~~~~~~
+gcc -o TP_[2].exe "src\\Confederacion.o" "src\\Jugador.o" "src\\TP_[2].o" "src\\utn.o" 
+Info: Nothing to build for TP_[2]

@@ -1,0 +1,25 @@
+/*
+ ============================================================================
+ Name        : TP_[2].c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+#include "Jugador.h"
+#include "Confederacion.h"
+#define MAX_CONFEDERACION 6
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	Confederacion listConfederacion [MAX_EN]
+
+
+
+}

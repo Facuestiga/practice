@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="Confederacion"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="Autor"/>
+			<item value="Editorial"/>
+			<item value="Libro"/>
+			<item value="idEditorial"/>
+			<item value="libros"/>
+			<item value="MAX_LIBROS"/>
+			<item value="contadorLibro"/>
+			<item value="Libros"/>
+			<item value="Gen"/>
+			<item value="eGen"/>
+			<item value="Jugador"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Confederacion"/>
+			<item value="Jugador"/>
+			<item value="numeroCamiseta"/>
+			<item value="listJugadores"/>
+			<item value="MAX_JUGADORES"/>
+			<item value="contadorJugador"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="807"/>
+		<item key="DIALOG_Y_ORIGIN" value="268"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
